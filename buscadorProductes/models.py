@@ -37,5 +37,8 @@ class localilizacionActualProd(models.Model):
                                                                            self.estanteria.n_estanteria)
 
 
-#class Almacen(models.Model):
-#    ubicacion = models.ForeignKey()
+class Almacen(models.Model):
+    ubicacion = models.IntegerField()
+
+    def __str__(self):
+        return "Ubicacion:{0}".format(self.ubicacion)
