@@ -7,8 +7,7 @@ from buscadorProductes.models import Producto
 
 # Create your views here.
 def search(request):
-    return render(request, "buscadorProductes/search.html",
-                  {'nproductos': Producto.objects.count()})
+    return render(request, "buscadorProductes/search.html")
 
 
 def login(request):
