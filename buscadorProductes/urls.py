@@ -4,7 +4,11 @@ from django.contrib import admin
 from .views import search
 from .views import login_view
 from .views import home
+<<<<<<< HEAD
 from .views import register
+=======
+from .views import productes
+>>>>>>> jorge
 
 urlpatterns = [
     url(r'search$', search),
@@ -12,4 +16,5 @@ urlpatterns = [
     url(r'register$', register),
     url(r'^$', home),
     url(r'home$', home),
+    url(r'productes$', productes),
 ]
