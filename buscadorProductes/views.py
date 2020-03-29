@@ -16,3 +16,6 @@ def login(request):
 
 def home(request):
     return render(request, "buscadorProductes/home.html")
+
+def productes(request):
+    return render(request, "buscadorProductes/Productes.html", {'Product_list': productes})
