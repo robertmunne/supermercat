@@ -5,6 +5,13 @@ from .models import Producto
 
 # Register your models here.
 from buscadorProductes import models
+from django.contrib.auth.models import User
+
+
+def add_auser():
+    user = User.objects.create_user('Jorge', 'jorgics@gmail.com', '12345')
+    user.save()
+    return user
 
 
 # admin.site.register(models.Producto)
